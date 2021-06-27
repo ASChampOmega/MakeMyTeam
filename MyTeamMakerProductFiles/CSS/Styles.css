@@ -1,0 +1,266 @@
+﻿body {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    position: sticky;
+}
+
+
+    .navbar a {
+        float: left;
+        font-size: 16px;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    .navbar a:hover, .dropdown:hover .dropbtn {
+        background-color: lightblue;
+        color: black;
+    }
+
+.MainBoardText1 {
+    font-size: 100px;
+    text-align: center;
+    color: white;
+    margin-right: auto;
+    margin-left: auto;
+    background-image: url('https://image.freepik.com/free-vector/internet-network-connection-dark-background_237543-20.jpg');
+    background-repeat: no-repeat;
+    height: 100%;
+    background-position: center;
+    background-size: 150%;
+}
+
+.SubHeaderMainB {
+    font-size: 39px;
+    text-align: center;
+    color: white;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.StartBtn {
+    font-size: 35px;
+    position: center;
+    border-color: black;
+    border-width: medium;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    color: black;
+    background-color: gold;
+    text-decoration: none;
+    text-align: center;
+    padding: 20px 75px 20px 75px;
+    border-radius: 3px 4px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+    .StartBtn a {
+        text-decoration: none;
+        color: black;
+    }
+
+.AboutUs{
+    margin:0;
+    padding:20px;
+    text-align:justify;
+
+}
+
+    .AboutUs h2 {
+        font-size:26px;
+    }
+
+.PageCont{
+    margin: 75px;
+    background-color:gold;
+    padding:25px;
+}
+
+.PageCont label{
+    font-style:oblique;
+    font-size:19px;
+    text-decoration:underline;
+}
+
+.PageContLabel {
+    font-style: oblique;
+    font-size: 19px;
+    text-decoration: underline;
+}
+
+input {
+    border: solid 1px black;
+    padding: 10px 15px;
+    margin-left: 15px;
+    font-size: 16px;
+}
+
+button {
+    border: none;
+    background-color: #007fff;
+    color: white;
+    padding: 10px 24px;
+    margin-left: 20px;
+    font-size: 18px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.EnterDataForm{
+    background-color:gold;
+    padding: 20px;
+}
+
+.FormSpace{
+    background-color:#ffcd18;
+    padding:25px;
+}
+.FormBoxes{
+    max-width: 45%;
+    border:none;
+}
+
+.FormBoxes tr{
+    max-width: 45%;
+}
+
+.FormBoxes td{
+    min-width:12.5%;
+    max-width:22.5%;
+}
+
+.MakeTeamHead{
+    margin-left:50px;
+}
+
+.TeamBody {
+    margin-left: auto;
+    margin-right:auto;
+    margin-top: 20px;
+    padding: 30px;
+    background-color: gold;
+    font-size: 17px;
+    border-radius: 5px;
+    width:90%;
+}
+
+.TeamHeading {
+    font-size: 20px;
+    background-color: lightgoldenrodyellow;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.TeamList {
+    font-size: 17px;
+    text-align:center;
+    text-decoration:none;
+    background-color:gold;
+    opacity:75%;
+    width:90%;
+    padding: 20px;
+
+}
+
+.TeamMates {
+    font-size: 17px;
+    text-align: center;
+    text-decoration: none;
+    background-color: yellow;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    padding: 5px;
+}
+
+.HomeInfoLeft{
+    text-align:left;
+    padding-left:30px;
+    font-size:20px;
+    padding-top:20px;
+    padding-right:20px;
+    padding-bottom:20px;
+    min-height:250px;
+}
+
+.HomeInfoLeft h2{
+    font-size:36px;
+}
+
+.HomeInfoRight {
+    text-align: right;
+    padding-right: 30px;
+    font-size: 20px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    min-height: 250px;
+    background-color:#f6f6f6;
+}
+.HomeInfoRight h2 {
+    font-size: 36px;
+}
+
+.HomeInfoLeft img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 400px;
+}
+
+.HomeInfoRight img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 400px;
+}
+
+.footer {
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    width: 100%;
+    margin-top: 25px;
+}
+
+    .footer .FootDetails {
+        color: lightgrey;
+        padding: 20px;
+        width: 70%;
+    }
+
+    .footer .FootLinks {
+        text-decoration: none;
+        color: white;
+        display: inline-block;
+        padding: 20px;
+        width: 30%;
+    }
+.Note1{
+    font-size:36px;
+    color:black;
+    text-decoration:underline;
+    background-color:gold;
+    text-align:center;
+    padding:20px;
+}
+
+.LargeTB{
+    width:500px;
+}

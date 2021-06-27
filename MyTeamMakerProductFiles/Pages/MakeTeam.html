@@ -1,0 +1,112 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title> Make My Teams! </title>
+
+    <script src="../JS/MakeForm.js"></script>
+    <link href="../CSS/Styles.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="navbar">
+        <a href="HomePage.html"> Home </a>
+        <a href="MakeTeam.html" class="NavbarActive"> Make my Team </a>
+        <a href="HelpPage.html">Help Page</a>
+    </div>
+    <div class="MakeTeamHead">
+        <h2>
+            Make A Team!
+        </h2>
+        <p>
+            In the section below, you can make your teams! <br />
+            First, choose your preferred mode of input. If you have used this website before, and want to import data, you can use the
+            "Import Data" button. If you want to start afresh, you can use the "Enter Data" Button. This will open a form, which you
+            need to fill. You can choose <strong>any number of attributes</strong> that will form the basis of <em>team formation</em>. You will then have to <em>name</em>
+            these attributes (for your convinience) and subsequently, <strong>enter the data (name and score for each attribute)</strong> of all the people
+            you wish to include in the team process. There is <strong>no limit to the maximum score </strong> for each attribute. However, we recommend
+            setting it as 10 or 100. Nevertheless, it can be anything best suited to you (you do not need to enter this maximum). <br /><br />
+
+            Sometimes, you may want to have people with different skills in the same group. In that case, simply click on the button
+            <strong>"Make Teams Reversed"</strong> when it appears and you have filled all the spaces! If you are uploading the data and
+            want to choose more diverse teams, then click on the <strong>Upload Data Reversed button. </strong>
+            <br /><br />
+            The site does not accept the characters: ", : % \".
+        </p>
+    </div>
+    <button onclick="ChooseData()" id="EnterDataBtn">
+        Enter Data
+    </button>
+    &nbsp; &nbsp; &nbsp;
+    <button onclick="ChooseString()" id="PasteStringBtn">
+        Import Data
+    </button>
+    <div id="ImportDataDiv" style="display:none; margin:25px; background-color:gold; padding:25px;">
+        Please enter your Data String into this Box:
+        <br />
+        <input type="text" id="ImportDataBox" class="LargeTB"/>
+        <br />
+        <p id="numPinT"> Enter The Number of People in each team: </p>
+        <input type="number" id="NTeam" /><br /><br />
+        <button onclick="startUpload()"> Upload Data </button>
+        <button onclick="startUpload()"> Upload Data Reversed </button>
+    </div>
+
+    <div class="PageCont" id="PageCont1" style="display:none">
+        <div id="AttributeForm">
+            Please Enter the number of attributes you wish to build the team around.
+            <input type="number" id="nAttr" />
+            <br /><br />
+            Please Enter the Number of People You Wish to Build Teams For
+            <input type="number" id="nPeople" />
+            <br />
+            <br />
+            <!-- The Textboxes for the Names of Attributes will be generated through JavaScript -->
+            <button onclick="nameAttr()" id="NameAtrBtn"> Name The Attributes! </button>
+            <div class="AttributeF" id="AttributeForm">
+            </div>
+            <button onclick="makeForm()" id="MakeFormBtn" style="display:none"> Make The Form! </button>
+        </div>
+        <div id="FormMain" class="EnterDataForm" style="display:none">
+            <label> Please Enter The Full Name </label>
+            <input type="text" id="name" />
+            <br />
+            <br />
+            <!-- The Textboxes for the Forms will be generated through JavaScript -->
+            <div id="FormSpace">
+                <table id="FormBoxes">
+                </table>
+            </div>
+            <button onclick="submitP()" id="SubN"> Submit This Name </button>
+        </div>
+
+        <br />
+        <br />
+        <div id="MakeTeamArea" style="display:none;">
+            <p id="numPinT"> Enter The Number of People in each team: </p>
+            <input type="number" id="NTeam1" />
+            <button onclick="makeTeam1()"> Make Teams </button>
+            &nbsp; <button onclick="makeTeam2()"> Make Teams Reversed </button>
+
+        </div>
+
+
+    </div>
+    <div id="ShowTeams"></div>
+    <div id="OutputData" style="display:none; margin:25px;background-color:aliceblue">
+        <p>
+            If you wish to use the same data again, please click on the button below <br />
+            Export Data is the data you need to copy. You can use this data the next time by clicking on the button Import Data at the Start <br />
+            Export Teams is an optional string that will be exported and can be used for your reference.
+        </p>
+        <button onclick="makeStorage()"> Export Data </button> &nbsp; &nbsp;
+        <button onclick="outputTeams()"> Export Teams </button>
+        <br />
+        <div id="OutputStorage"></div>
+        <br /><br />
+        <div id="OutputTeamsStorage"></div>
+    </div>
+    <br /><br /><br />
+    <button onclick="location.reload()"> Restart </button>
+
+</body>
+</html>
